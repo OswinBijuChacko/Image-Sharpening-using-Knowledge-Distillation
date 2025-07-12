@@ -1,4 +1,4 @@
-#Sample Results: Image Sharpening using Knowledge Distillation
+# Sample Results: Image Sharpening using Knowledge Distillation
 
 This document presents sample visual comparisons from the image sharpening pipeline built using Knowledge Distillation. The goal is to demonstrate how effectively the student model replicates the teacher model's ability to enhance image sharpness.
 
@@ -11,7 +11,7 @@ Below is a comparison of the blurred input, the output after sharpening using th
 
 ![](data/gr.png)
 
-##Observations
+## Observations
 
 The student model produces outputs that closely resemble those of the teacher model. Despite being lighter and more efficient, it retains key structural and perceptual details in the sharpened images.
 Edges, textures, and contrast are effectively restored. While subtle differences can be noticed in some cases, they are minimized due to the combined use of loss functions such as LPIPS and SSIM, which ensure both pixel-level and perceptual fidelity.
